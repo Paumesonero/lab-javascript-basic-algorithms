@@ -50,3 +50,22 @@ else if (hacker2.localeCompare(hacker1) < 0) {
 else {
     console.log("What?! You both have the same name?");
 }
+
+
+// Bonus!! Yay!
+
+const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  et Suspendisse tristique feugiat enim nec egestas. Vivamus tincidunt ex nisl, at laoreet lacus vehicula eu. Nunc nisi enim, congue quis mollis tempus, venenatis in felis. Etiam sodales pharetra posuere. Vivamus ultricies felis at enim condimentum placerat. Curabitur facilisis vel purus ut mattis. Nulla sagittis nulla quis ligula posuere, et auctor metus egestas. In posuere mi non sapien consectetur, nec iaculis nulla ultricies. Pellentesque accumsan porttitor quam. Maecenas vel diam nec enim tincidunt eleifend vitae tristique lacus. Maecenas euismod feugiat urna id laoreet. Mauris eget orci lacus"
+
+// function that counts words.
+function countWords(str) {
+    return str.split(' ').length;
+}
+console.log(countWords(loremIpsum))
+
+//function that counts certain words.
+
+function countCertainWord(str, word) {
+    return str.split(word).length
+}
+
+countCertainWord(loremIpsum, 'et')
